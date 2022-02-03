@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export default function MyApp({ Component, pageProps }) {
+	
   return (
     <>
       <GlobalStyle />

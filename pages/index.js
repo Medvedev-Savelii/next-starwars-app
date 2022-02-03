@@ -49,6 +49,7 @@ export async function getStaticProps(context) {
 }
 
 const HomeScreenContainer = styled.div``;
+
 const CharactersContainer = styled.div`
   display: flex;
   margin-top: 200px;
@@ -72,15 +73,15 @@ const StarfieldLeft = styled(Starfield)`
   height: 1700px;
   background-position: left center;
   background-size: 100% auto;
-  background-image: url("https://static-mh.content.disney.io/starwars/assets/background/bg_starsL-fd4661a3ccea.jpg");
+  background-image: url(https://static-mh.content.disney.io/starwars/assets/background/bg_starsL-fd4661a3ccea.jpg);
 `;
 
 const StarfieldRight = styled(Starfield)`
-  left: 0;
+  right: 0;
   height: 1700px;
-  background-position: left center;
-  background-size: 100% auto;
-  background-image: url("https://static-mh.content.disney.io/starwars/assets/background/bg_starsR-655c85e404d4.jpg");
+  background-position: right center;
+  background-size: auto 100%;
+  background-image: url(https://static-mh.content.disney.io/starwars/assets/background/bg_starsR-655c85e404d4.jpg);
 `;
 
 const Button = styled.button`
@@ -95,7 +96,6 @@ const Button = styled.button`
   font-size: 18.4px;
   display: block;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
   :hover {
     color: #fff;
     cursor: pointer;
