@@ -1,7 +1,24 @@
-import '../styles/globals.css'
+import { createGlobalStyle } from "styled-components";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const GlobalStyles = createGlobalStyle`
+	body {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	h1 {
+		text-align: center;
+		justify-content: center;
+		color: red;
+		
+	}
+`;
+
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <GlobalStyles />
+      <Component {...pageProps} />;
+    </>
+  );
 }
-
-export default MyApp
