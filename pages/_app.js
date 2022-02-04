@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import styled from "styled-components";
+
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -44,7 +45,6 @@ export default function MyApp({ Component, pageProps }) {
               src="https://download.logo.wine/logo/Star_Wars/Star_Wars-Logo.wine.png"
               alt=""
             />
-            <Loader />
           </AppLoadingContents>
         </AppLoading>
       ) : (
