@@ -26,7 +26,7 @@ function Header() {
         </HeaderSearch>
         <HeaderActions>
           <button>LOG IN</button>
-          <span>//</span>
+          <span>/</span>
           <button>SIGN UP</button>
         </HeaderActions>
       </HeaderRight>

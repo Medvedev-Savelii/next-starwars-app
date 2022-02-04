@@ -35,7 +35,7 @@ function CharacterCard({ character }) {
               (character?.homeworld && "LOCATIONS")}
           </h4>
           {locations.filter(updateLocations).map((location) => (
-            <p>{location !== "" && location}</p>
+            <p key={1}>{location !== "" && location}</p>
           ))}
           <h4>GENDER</h4>
           <span>{character?.gender}</span>

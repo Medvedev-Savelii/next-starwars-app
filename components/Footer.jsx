@@ -18,7 +18,7 @@ function Footer() {
           Privacy Policy
         </a>
         <a href="/" target="_blank">
-          Children's Online Privacy Policy
+          Children Online Privacy Policy
         </a>
         <a href="/" target="_blank">
           Your California Privacy Rights
@@ -93,7 +93,6 @@ const FooterLinksContainer = styled.div`
       margin: 0 auto;
       opacity: 0.9;
       border-bottom: 1px solid transparent;
-      /* Animations */
       -webkit-transition: border-color 200ms, width 250ms;
       -moz-transition: border-color 200ms, width 250ms;
       transition: border-color 200ms, width 250ms;
