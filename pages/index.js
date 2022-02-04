@@ -19,7 +19,22 @@ export default function Characters({ characters }) {
         <StarfieldLeft />
         <CharactersContainer>
           {characters
-            .filter((character) => character.id !== 28 && character.id !== 77)
+            .filter(
+              (character) =>
+                character.id !== 28 &&
+                character.id !== 77 &&
+                character.id !== 26 &&
+                character.id !== 36 &&
+                character.id !== 61 &&
+                character.id !== 37 &&
+                character.id !== 43 &&
+                character.id !== 49 &&
+                character.id !== 77 &&
+                character.id !== 56 &&
+                character.id !== 57 &&
+                character.id !== 47 &&
+                character.id !== 82
+            )
             .map(
               (character, index) =>
                 index < value && (
